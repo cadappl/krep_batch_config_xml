@@ -20,13 +20,13 @@
     </replace-patterns>
   </project>
 
+  <!-- For CM project, the git name need convert to the aosp one for the simple maintenance -->
   <project name="cm" group="android">
     <option name="manifest" value="https://github.com/CyanogenMod/android.git" />
     <option name="schema" value="repo-mirror" />
     <option name="working-dir" value="cm-mirror" />
     <option name="refs" value="cm" />
     <option name="repo_create" value="false" />
-    <!-- don't add "refs" for git-repo and tools/repo -->
     <exclude-patterns category="project">
       <pattern value="git-repo" />
       <pattern value="tools/repo" />
@@ -110,7 +110,7 @@
       <pattern name="CyanogenMod/external_android_support-prebuilt" value="CyanogenMod/external_android_support-prebuilt" replace="platform/vendor/cm/prebuilts/android-support" />
       <pattern name="CyanogenMod/ion" value="CyanogenMod/ion" replace="platform/vendor/external/ion" />
       <pattern name="CyanogenMod/AndroidAsync" value="CyanogenMod/AndroidAsync" replace="platform/vendor/cm/packages/apps/AndroidSync" />
-      <pattern name="^CyanogenMod/.*$" value="~_~/~,~CyanogenMod/android/device/device/~,~CyanogenMod/android/~platform/~,~CyanogenMod/cm/~platform/vendor/" />
+      <pattern name="^CyanogenMod/.*$" value="~_~/~,~CyanogenMod/android/device/~device/~,~CyanogenMod/android/~platform/~,~CyanogenMod/cm/~platform/vendor/~" />
     </replace-patterns>
   </project>
 </projects>
