@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<projects>
+  <global_option name="keep_name" value="true" />
+  <global_option name="all" value="true" />
+
+  <project name="aosp" group="android">
+    <option name="manifest" value="git://android.googlesource.com/platform/manifest" />
+    <option name="schema" value="repo-mirror" />
+    <option name="working-dir" value="aosp-mirror" />
+    <option name="refs" value="aosp" />
+    <replace-patterns category="revision-rp">
+      <pattern name="tools/repo$" value="~aosp/~~" />
+    </replace-patterns>
+  </project>
+</projects>

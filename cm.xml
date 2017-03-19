@@ -3,23 +3,6 @@
   <global_option name="keep_name" value="true" />
   <global_option name="all" value="true" />
 
-  <project name="kernel/linux" group="gpl,kernel">
-    <option name="git" value="git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git" />
-    <option name="schema" value="git-p" />
-    <option name="working-dir" value="linux-stable" />
-    <option name="refs" value="official" />
-  </project>
-
-  <project name="aosp" group="android">
-    <option name="manifest" value="git://android.googlesource.com/platform/manifest" />
-    <option name="schema" value="repo-mirror" />
-    <option name="working-dir" value="aosp-mirror" />
-    <option name="refs" value="aosp" />
-    <replace-patterns category="revision-rp">
-      <pattern name="tools/repo$" value="~aosp/~~" />
-    </replace-patterns>
-  </project>
-
   <!-- For CM project, the git name need convert to the aosp one for the simple maintenance -->
   <project name="cm" group="android">
     <option name="manifest" value="https://github.com/CyanogenMod/android.git" />
