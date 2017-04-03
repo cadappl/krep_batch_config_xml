@@ -12,4 +12,9 @@
       <pattern name="tools/repo$" value="~aosp/~~" />
     </replace-patterns>
   </project>
+  <project name="git-repo" group="android,aosp">
+    <option name="git" value="https://gerrit.googlesource.com/git-repo" />
+    <option name="schema" value="git-p" />
+    <option name="working-dir" value="git-repo" />
+  </project>
 </projects>
