@@ -8,7 +8,7 @@ sub-command `batch`. The file can be used as the arguement for the command:
 $ krep batch *.xml
 ```
 
-Now the file contains three projects:
+Now the files contains four projects:
 
 - Linux kernel
 - Android AOSP
@@ -17,6 +17,9 @@ Now the file contains three projects:
 
 The main reference can be the usage of the project *Android CM* and
 *Android LineageOS*, which contain lots of patterns.
- 
+
+And now with the extra support with `include' element, one XML file can include
+other files.
+
 [krep]: https://github.com/cadappl/krep
 
