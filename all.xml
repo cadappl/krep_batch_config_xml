@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<projects>
+  <global_option name="keep_name" value="true" />
+  <global_option name="all" value="true" />
+
+  <include name="aosp.xml" />
+  <include name="cm.xml" />
+  <include name="lineage.xml" />
+  <include name="linux.xml" />
+</projects>
