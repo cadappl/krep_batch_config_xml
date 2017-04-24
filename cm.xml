@@ -1,99 +1,97 @@
-<?xml version="1.0" encoding="utf-8"?>
-<projects>
-  <global_option name="keep_name" value="true" />
-  <global_option name="all" value="true" />
+<?xml version="1.0" encoding="utf-8"?> <projects>   <global_option name="keep_name" />   <global_option
+name="all" />
 
   <!-- For CM project, the git name need convert to the aosp one for the simple maintenance -->
   <project name="cm" group="android">
-    <option name="manifest" value="https://github.com/CyanogenMod/android.git" />
-    <option name="schema" value="repo-mirror" />
-    <option name="working-dir" value="cm-mirror" />
-    <option name="refs" value="cm" />
-    <option name="repo_create" value="false" />
+    <option name="manifest" />
+    <option name="schema" />
+    <option name="working-dir" />
+    <option name="refs" />
+    <option name="repo_create" />
     <exclude-patterns category="project">
-      <pattern value="git-repo" />
-      <pattern value="tools/repo" />
+      <pattern />
+      <pattern />
     </exclude-patterns>
     <replace-patterns category="project-rp">
-      <pattern name="^CyanogenMod/android$" value="CyanogenMod/android" replace="platform/manifest" />
-      <pattern name="CyanogenMod/android_external_ahbottomnavigation" value="CyanogenMod/android_external_ahbottomnavigation" replace="platform/vendor/cm/external/ahbottomnavigation" />
-      <pattern name="CyanogenMod/android_external_android-visualizer" value="CyanogenMod/android_external_android-visualizer" replace="platform/vendor/cm/packages/apps/AndroidVisualizer" />
-      <pattern name="CyanogenMod/android_external_ant-wireless_ant_native" value="CyanogenMod/android_external_ant-wireless_ant_native" replace="platform/external/ant-wireless/ant_native" />
-      <pattern name="CyanogenMod/android_external_ant-wireless_ant_service" value="CyanogenMod/android_external_ant-wireless_ant_service" replace="platform/external/ant-wireless/ant_service" />
-      <pattern name="CyanogenMod/android_external_bash" value="CyanogenMod/android_external_bash" replace="external/bash" />
-      <pattern name="CyanogenMod/android_external_brctl" value="CyanogenMod/android_external_brctl" replace="kernel/bridge-utils" />
-      <pattern name="CyanogenMod/android_external_cmsdk-api-coverage" value="CyanogenMod/android_external_cmsdk-api-coverage" replace="platform/vendor/cm/external/sdk-api-coverage" />
-      <pattern name="CyanogenMod/android_external_cyanogen_UICommon" value="CyanogenMod/android_external_cyanogen_UICommon" replace="platform/vendor/cm/packages/apps/UICommon" />
-      <pattern name="CyanogenMod/android_external_ebtables" value="CyanogenMod/android_external_ebtables" replace="external/ebtables" />
-      <pattern name="CyanogenMod/android_external_exfat" value="CyanogenMod/android_external_exfat" replace="external/exfat" />
-      <pattern name="CyanogenMod/android_external_ffmpeg" value="CyanogenMod/android_external_ffmpeg" replace="external/ffmpeg" />
-      <pattern name="CyanogenMod/android_external_fsck_msdos" value="CyanogenMod/android_external_fsck_msdos" replace="platform/external/fsck_msdos" />
-      <pattern name="CyanogenMod/android_external_fuse" value="CyanogenMod/android_external_fuse" replace="platform/external/fuse" />
-      <pattern name="CyanogenMod/android_external_fuse" value="CyanogenMod/android_external_fuse" replace="platform/external/fuse" />
-      <pattern name="CyanogenMod/android_external_gello_build" value="CyanogenMod/android_external_gello_build" replace="platform/vendor/cm/external/gello/build" />
-      <pattern name="CyanogenMod/android_external_google" value="CyanogenMod/android_external_google" replace="platform/vendor/cm/external/google" />
-      <pattern name="CyanogenMod/android_external_gson" value="CyanogenMod/android_external_gson" replace="external/gson" />
-      <pattern name="CyanogenMod/android_external_htop" value="CyanogenMod/android_external_htop" replace="external/htop" />
-      <pattern name="CyanogenMod/android_external_json-c" value="CyanogenMod/android_external_json-c" replace="external/json-c" />
-      <pattern name="CyanogenMod/android_external_libncurses" value="CyanogenMod/android_external_libncurses" replace="external/libncurses" />.
-      <pattern name="CyanogenMod/android_external_libphonenumbergoogle" value="CyanogenMod/android_external_libphonenumbergoogle" replace="platform/vendor/cm/external/libphonenumbergoogle" />
-      <pattern name="CyanogenMod/android_external_libtar" value="CyanogenMod/android_external_libtar" replace="external/libtar" />
-      <pattern name="CyanogenMod/android_external_libusbx" value="CyanogenMod/android_external_libusbx" replace="external/libusbx" />
-      <pattern name="CyanogenMod/android_external_libtruezip" value="CyanogenMod/android_external_libtruezip" replace="external/libtruezip" />
-      <pattern name="CyanogenMod/android_external_lzo" value="CyanogenMod/android_external_lzo" replace="external/lzo" />
-      <pattern name="CyanogenMod/android_external_nano" value="CyanogenMod/android_external_nano" replace="external/nano" />
-      <pattern name="CyanogenMod/android_external_ntfs-3g" value="CyanogenMod/android_external_ntfs-3g" replace="external/ntfs-3g" />
-      <pattern name="CyanogenMod/android_external_p7zip" value="CyanogenMod/android_external_p7zip" replace="external/p7zip" />
-      <pattern name="CyanogenMod/android_external_pigz" value="CyanogenMod/android_external_pigz" replace="external/pigz" />
-      <pattern name="CyanogenMod/android_external_powertop" value="CyanogenMod/android_external_powertop" replace="external/powertop" />
-      <pattern name="CyanogenMod/android_external_rsync" value="CyanogenMod/android_external_rsync" replace="external/rsync" />
-      <pattern name="CyanogenMod/android_external_spongycastle" value="CyanogenMod/android_external_spongycastle" replace="external/spongcastle" />
-      <pattern name="CyanogenMod/android_external_stagefright-plugins" value="CyanogenMod/android_external_stagefright-plugins" replace="platform/vendor/cm/external/stagefright/plugins" />
-      <pattern name="CyanogenMod/android_external_unrar" value="CyanogenMod/android_external_unrar" replace="external/unrar" />
-      <pattern name="CyanogenMod/android_external_unzip" value="CyanogenMod/android_external_unzip" replace="external/unzip" />
-      <pattern name="CyanogenMod/android_external_vim" value="CyanogenMod/android_external_vim" replace="external/vim" />
-      <pattern name="CyanogenMod/android_external_zip" value="CyanogenMod/android_external_zip" replace="external/zip" />
-      <pattern name="CyanogenMod/android_external_wpa_supplicant_8" value="CyanogenMod/android_external_wpa_supplicant_8" replace="platform/external/wpa_supplicant_8" />
-      <pattern name="CyanogenMod/android_external_libnetfilter_conntrack" value="CyanogenMod/android_external_libnetfilter_conntrack" replace="platform/external/libnetfilter_conntrack" />
-      <pattern name="CyanogenMod/android_frameworks_minikin" value="CyanogenMod/android_frameworks_minikin" replace="platform/vendor/cm/frameworks/minikin" />
-      <pattern name="CyanogenMod/android_frameworks_opt_hardware" value="CyanogenMod/android_frameworks_opt_hardware" replace="platform/vendor/cm/frameworks/opt/hardware" />
-      <pattern name="CyanogenMod/android_hardware_cyanogen" value="CyanogenMod/android_hardware_cyanogen" replace="platform/vendor/cm/hardware/cyanogen" />
-      <pattern name="CyanogenMod/android_hardware_libhardware_legacy" value="CyanogenMod/android_hardware_libhardware_legacy" replace="platform/hardware/libhardware_legacy" />
-      <pattern name="CyanogenMod/android_packages_apps_AudioFX" value="CyanogenMod/android_packages_apps_AudioFX" replace="platform/vendor/cm/packages/apps/AudioFX" />
-      <pattern name="CyanogenMod/android_packages_apps_BluetoothExt" value="CyanogenMod/android_packages_apps_BluetoothExt" replace="platform/vendor/cm/packages/apps/BluetoothExt" />
-      <pattern name="CyanogenMod/android_packages_apps_CMBugreport" value="CyanogenMod/android_packages_apps_CMBugreport" replace="platform/vendor/cm/packages/apps/CMBugreport" />
-      <pattern name="CyanogenMod/android_packages_apps_CMFileManager" value="CyanogenMod/android_packages_apps_CMFileManager" replace="platform/vendor/cm/packages/apps/CMFileManager" />
-      <pattern name="CyanogenMod/android_packages_apps_CMUpdater" value="CyanogenMod/android_packages_apps_CMUpdater" replace="platform/vendor/cm/packages/apps/CMUpdater" />
-      <pattern name="CyanogenMod/android_packages_apps_CMWallpapers" value="CyanogenMod/android_packages_apps_CMWallpapers" replace="platform/vendor/cm/packages/apps/CMWallpaper" />
-      <pattern name="CyanogenMod/android_packages_apps_Eleven" value="CyanogenMod/android_packages_apps_Eleven" replace="platform/vendor/cm/packages/apps/Eleven" />
-      <pattern name="CyanogenMod/android_packages_apps_Gello" value="CyanogenMod/android_packages_apps_Gello" replace="platform/vendor/cm/packages/apps/Gello" />
-      <pattern name="CyanogenMod/android_packages_apps_LockClock" value="CyanogenMod/android_packages_apps_LockClock" replace="platform/vendor/cm/packages/apps/LockClock" />
-      <pattern name="CyanogenMod/android_packages_apps_OpenWeatherMapProvider" value="CyanogenMod/android_packages_apps_OpenWeatherMapProvider" replace="platform/vendor/cm/packages/providers/OpenWeatherMapProvider" />
-      <pattern name="CyanogenMod/android_packages_apps_WundergroundWeatherProvider" value="CyanogenMod/android_packages_apps_WundergroundWeatherProvider" replace="platform/vendor/cm/packages/providers/WundergroundWeatherProvider" />
-      <pattern name="CyanogenMod/android_packages_apps_YahooWeatherProvider" value="CyanogenMod/android_packages_apps_YahooWeatherProvider" replace="platform/vendor/cm/packages/providers/YahooWeatherProvider" />
-      <pattern name="CyanogenMod/android_packages_apps_Profiles" value="CyanogenMod/android_packages_apps_Profiles" replace="platform/vendor/cm/packages/apps/Profiles" />
-      <pattern name="CyanogenMod/android_packages_apps_Screencast" value="CyanogenMod/android_packages_apps_Screencast" replace="platform/vendor/cm/packages/apps/Screencast" />
-      <pattern name="CyanogenMod/android_packages_apps_SetupWizard" value="CyanogenMod/android_packages_apps_SetupWizard" replace="platform/vendor/cm/packages/apps/SetupWizard" />
-      <pattern name="CyanogenMod/android_packages_apps_Snap" value="CyanogenMod/android_packages_apps_Snap" replace="platform/vendor/cm/packages/apps/Snap" />
-      <pattern name="CyanogenMod/android_packages_apps_Trebuchet" value="CyanogenMod/android_packages_apps_Trebuchet" replace="platform/vendor/cm/pakcages/apps/Trebuchet" />
-      <pattern name="CyanogenMod/android_packages_apps_ThemeChooser" value="CyanogenMod/android_packages_apps_ThemeChooser" replace="platform/vendor/cm/packages/apps/ThemeChooser" />
-      <pattern name="CyanogenMod/android_packages_apps_WallpaperPicker" value="CyanogenMod/android_packages_apps_WallpaperPicker" replace="platform/vendor/cm/packages/apps/WallpaperPicker" />
-      <pattern name="CyanogenMod/android_packages_providers_DataUsageProvider" value="CyanogenMod/android_packages_providers_DataUsageProvider" replace="platform/vendor/cm/packages/providers/DataUsageProvider" />
-      <pattern name="CyanogenMod/android_packages_providers_ThemesProvider" value="CyanogenMod/android_packages_providers_ThemesProvider" replace="platform/vendor/cm/packages/providers/ThemeProvider" />
-      <pattern name="CyanogenMod/android_packages_providers_WeatherProvider" value="CyanogenMod/android_packages_providers_WeatherProvider" replace="platform/vendor/cm/packages/providers/WeatherProvider" />
-      <pattern name="CyanogenMod/android_packages_services_CMAudioService" value="CyanogenMod/android_packages_services_CMAudioService" replace="platform/vendor/cm/packages/services/CMAudioService" />
-      <pattern name="CyanogenMod/android_packages_services_LiveLockScreenService" value="CyanogenMod/android_packages_services_LiveLockScreenService" replace="platform/vendor/cm/packages/services/LiveLockScreenService" />
-      <pattern name="CyanogenMod/android_packages_services_ThemeManagerService" value="CyanogenMod/android_packages_services_ThemeManagerService" replace="platform/vendor/cm/packages/service/ThemeManagerService" />
-      <pattern name="CyanogenMod/android_packages_services_WeatherService" value="CyanogenMod/android_packages_services_WeatherService" replace="platform/vendor/cm/packages/services/WeatherService" />
-      <pattern name="CyanogenMod/android_packages_themes_HexoLibre" value="CyanogenMod/android_packages_themes_HexoLibre" replace="platform/vendor/cm/packages/themes/HexoLibre" />
-      <pattern name="CyanogenMod/android_packages_wallpapers_PhotoPhase" value="CyanogenMod/android_packages_wallpapers_PhotoPhase" replace="platform/vendor/cm/packages/wallpapers/PhotoPhase" />
-      <pattern name="CyanogenMod/android_system_extras_su" value="CyanogenMod/android_system_extras_su" replace="platform/vendor/cm/system/extras/su" />
-      <pattern name="CyanogenMod/android_prebuilts_cmsdk" value="CyanogenMod/android_prebuilts_cmsdk" replace="platform/vendor/cm/prebuilts/sdk" />
-      <pattern name="CyanogenMod/cm_platform_sdk" value="CyanogenMod/cm_platform_sdk" replace="platform/vendor/cm/sdk" />
-      <pattern name="CyanogenMod/external_android_support-prebuilt" value="CyanogenMod/external_android_support-prebuilt" replace="platform/vendor/cm/prebuilts/android-support" />
-      <pattern name="CyanogenMod/ion" value="CyanogenMod/ion" replace="platform/vendor/external/ion" />
-      <pattern name="CyanogenMod/AndroidAsync" value="CyanogenMod/AndroidAsync" replace="platform/vendor/cm/packages/apps/AndroidSync" />
-      <pattern name="^CyanogenMod/.*$" value="~_~/~,~CyanogenMod/android/device/~device/~,~CyanogenMod/android/~platform/~,~CyanogenMod/cm/~platform/vendor/~" />
+      <pattern name="^CyanogenMod/android$" replace="platform/manifest" />
+      <pattern name="CyanogenMod/android_external_ahbottomnavigation" replace="platform/vendor/cm/external/ahbottomnavigation" />
+      <pattern name="CyanogenMod/android_external_android-visualizer" replace="platform/vendor/cm/packages/apps/AndroidVisualizer" />
+      <pattern name="CyanogenMod/android_external_ant-wireless_ant_native" replace="platform/external/ant-wireless/ant_native" />
+      <pattern name="CyanogenMod/android_external_ant-wireless_ant_service" replace="platform/external/ant-wireless/ant_service" />
+      <pattern name="CyanogenMod/android_external_bash" replace="external/bash" />
+      <pattern name="CyanogenMod/android_external_brctl" replace="kernel/bridge-utils" />
+      <pattern name="CyanogenMod/android_external_cmsdk-api-coverage" replace="platform/vendor/cm/external/sdk-api-coverage" />
+      <pattern name="CyanogenMod/android_external_cyanogen_UICommon" replace="platform/vendor/cm/packages/apps/UICommon" />
+      <pattern name="CyanogenMod/android_external_ebtables" replace="external/ebtables" />
+      <pattern name="CyanogenMod/android_external_exfat" replace="external/exfat" />
+      <pattern name="CyanogenMod/android_external_ffmpeg" replace="external/ffmpeg" />
+      <pattern name="CyanogenMod/android_external_fsck_msdos" replace="platform/external/fsck_msdos" />
+      <pattern name="CyanogenMod/android_external_fuse" replace="platform/external/fuse" />
+      <pattern name="CyanogenMod/android_external_fuse" replace="platform/external/fuse" />
+      <pattern name="CyanogenMod/android_external_gello_build" replace="platform/vendor/cm/external/gello/build" />
+      <pattern name="CyanogenMod/android_external_google" replace="platform/vendor/cm/external/google" />
+      <pattern name="CyanogenMod/android_external_gson" replace="external/gson" />
+      <pattern name="CyanogenMod/android_external_htop" replace="external/htop" />
+      <pattern name="CyanogenMod/android_external_json-c" replace="external/json-c" />
+      <pattern name="CyanogenMod/android_external_libncurses" replace="external/libncurses" />.
+      <pattern name="CyanogenMod/android_external_libphonenumbergoogle" replace="platform/vendor/cm/external/libphonenumbergoogle" />
+      <pattern name="CyanogenMod/android_external_libtar" replace="external/libtar" />
+      <pattern name="CyanogenMod/android_external_libusbx" replace="external/libusbx" />
+      <pattern name="CyanogenMod/android_external_libtruezip" replace="external/libtruezip" />
+      <pattern name="CyanogenMod/android_external_lzo" replace="external/lzo" />
+      <pattern name="CyanogenMod/android_external_nano" replace="external/nano" />
+      <pattern name="CyanogenMod/android_external_ntfs-3g" replace="external/ntfs-3g" />
+      <pattern name="CyanogenMod/android_external_p7zip" replace="external/p7zip" />
+      <pattern name="CyanogenMod/android_external_pigz" replace="external/pigz" />
+      <pattern name="CyanogenMod/android_external_powertop" replace="external/powertop" />
+      <pattern name="CyanogenMod/android_external_rsync" replace="external/rsync" />
+      <pattern name="CyanogenMod/android_external_spongycastle" replace="external/spongcastle" />
+      <pattern name="CyanogenMod/android_external_stagefright-plugins" replace="platform/vendor/cm/external/stagefright/plugins" />
+      <pattern name="CyanogenMod/android_external_unrar" replace="external/unrar" />
+      <pattern name="CyanogenMod/android_external_unzip" replace="external/unzip" />
+      <pattern name="CyanogenMod/android_external_vim" replace="external/vim" />
+      <pattern name="CyanogenMod/android_external_zip" replace="external/zip" />
+      <pattern name="CyanogenMod/android_external_wpa_supplicant_8" replace="platform/external/wpa_supplicant_8" />
+      <pattern name="CyanogenMod/android_external_libnetfilter_conntrack" replace="platform/external/libnetfilter_conntrack" />
+      <pattern name="CyanogenMod/android_frameworks_minikin" replace="platform/vendor/cm/frameworks/minikin" />
+      <pattern name="CyanogenMod/android_frameworks_opt_hardware" replace="platform/vendor/cm/frameworks/opt/hardware" />
+      <pattern name="CyanogenMod/android_hardware_cyanogen" replace="platform/vendor/cm/hardware/cyanogen" />
+      <pattern name="CyanogenMod/android_hardware_libhardware_legacy" replace="platform/hardware/libhardware_legacy" />
+      <pattern name="CyanogenMod/android_packages_apps_AudioFX" replace="platform/vendor/cm/packages/apps/AudioFX" />
+      <pattern name="CyanogenMod/android_packages_apps_BluetoothExt" replace="platform/vendor/cm/packages/apps/BluetoothExt" />
+      <pattern name="CyanogenMod/android_packages_apps_CMBugreport" replace="platform/vendor/cm/packages/apps/CMBugreport" />
+      <pattern name="CyanogenMod/android_packages_apps_CMFileManager" replace="platform/vendor/cm/packages/apps/CMFileManager" />
+      <pattern name="CyanogenMod/android_packages_apps_CMUpdater" replace="platform/vendor/cm/packages/apps/CMUpdater" />
+      <pattern name="CyanogenMod/android_packages_apps_CMWallpapers" replace="platform/vendor/cm/packages/apps/CMWallpaper" />
+      <pattern name="CyanogenMod/android_packages_apps_Eleven" replace="platform/vendor/cm/packages/apps/Eleven" />
+      <pattern name="CyanogenMod/android_packages_apps_Gello" replace="platform/vendor/cm/packages/apps/Gello" />
+      <pattern name="CyanogenMod/android_packages_apps_LockClock" replace="platform/vendor/cm/packages/apps/LockClock" />
+      <pattern name="CyanogenMod/android_packages_apps_OpenWeatherMapProvider" replace="platform/vendor/cm/packages/providers/OpenWeatherMapProvider" />
+      <pattern name="CyanogenMod/android_packages_apps_WundergroundWeatherProvider" replace="platform/vendor/cm/packages/providers/WundergroundWeatherProvider" />
+      <pattern name="CyanogenMod/android_packages_apps_YahooWeatherProvider" replace="platform/vendor/cm/packages/providers/YahooWeatherProvider" />
+      <pattern name="CyanogenMod/android_packages_apps_Profiles" replace="platform/vendor/cm/packages/apps/Profiles" />
+      <pattern name="CyanogenMod/android_packages_apps_Screencast" replace="platform/vendor/cm/packages/apps/Screencast" />
+      <pattern name="CyanogenMod/android_packages_apps_SetupWizard" replace="platform/vendor/cm/packages/apps/SetupWizard" />
+      <pattern name="CyanogenMod/android_packages_apps_Snap" replace="platform/vendor/cm/packages/apps/Snap" />
+      <pattern name="CyanogenMod/android_packages_apps_Trebuchet" replace="platform/vendor/cm/pakcages/apps/Trebuchet" />
+      <pattern name="CyanogenMod/android_packages_apps_ThemeChooser" replace="platform/vendor/cm/packages/apps/ThemeChooser" />
+      <pattern name="CyanogenMod/android_packages_apps_WallpaperPicker" replace="platform/vendor/cm/packages/apps/WallpaperPicker" />
+      <pattern name="CyanogenMod/android_packages_providers_DataUsageProvider" replace="platform/vendor/cm/packages/providers/DataUsageProvider" />
+      <pattern name="CyanogenMod/android_packages_providers_ThemesProvider" replace="platform/vendor/cm/packages/providers/ThemeProvider" />
+      <pattern name="CyanogenMod/android_packages_providers_WeatherProvider" replace="platform/vendor/cm/packages/providers/WeatherProvider" />
+      <pattern name="CyanogenMod/android_packages_services_CMAudioService" replace="platform/vendor/cm/packages/services/CMAudioService" />
+      <pattern name="CyanogenMod/android_packages_services_LiveLockScreenService" replace="platform/vendor/cm/packages/services/LiveLockScreenService" />
+      <pattern name="CyanogenMod/android_packages_services_ThemeManagerService" replace="platform/vendor/cm/packages/service/ThemeManagerService" />
+      <pattern name="CyanogenMod/android_packages_services_WeatherService" replace="platform/vendor/cm/packages/services/WeatherService" />
+      <pattern name="CyanogenMod/android_packages_themes_HexoLibre" replace="platform/vendor/cm/packages/themes/HexoLibre" />
+      <pattern name="CyanogenMod/android_packages_wallpapers_PhotoPhase" replace="platform/vendor/cm/packages/wallpapers/PhotoPhase" />
+      <pattern name="CyanogenMod/android_system_extras_su" replace="platform/vendor/cm/system/extras/su" />
+      <pattern name="CyanogenMod/android_prebuilts_cmsdk" replace="platform/vendor/cm/prebuilts/sdk" />
+      <pattern name="CyanogenMod/cm_platform_sdk" replace="platform/vendor/cm/sdk" />
+      <pattern name="CyanogenMod/external_android_support-prebuilt" replace="platform/vendor/cm/prebuilts/android-support" />
+      <pattern name="CyanogenMod/ion" replace="platform/vendor/external/ion" />
+      <pattern name="CyanogenMod/AndroidAsync" replace="platform/vendor/cm/packages/apps/AndroidSync" />
+      <pattern name="^CyanogenMod/.*$" />
     </replace-patterns>
   </project>
 </projects>

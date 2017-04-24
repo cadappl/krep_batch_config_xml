@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <projects>
-  <global_option name="keep_name" value="true" />
-  <global_option name="all" value="true" />
+  <global_option name="keep_name" />
+  <global_option name="all" />
 
   <project name="los" group="android">
-    <option name="manifest" value="https://github.com/LineageOS/android.git" />
-    <option name="schema" value="repo-mirror" />
-    <option name="working-dir" value="lineage" />
-    <option name="refs" value="los" />
-    <option name="repo_create" value="true" />
+    <option name="manifest" />
+    <option name="schema" />
+    <option name="working-dir" />
+    <option name="refs" />
+    <option name="repo_create" />
     <!-- don't add "refs" for git-repo and tools/repo -->
     <exclude-patterns category="project">
-      <pattern value="git-repo" />
-      <pattern value="tools/repo" />
+      <pattern />
+      <pattern />
     </exclude-patterns>
     <replace-patterns category="project-rp">
-      <pattern name="^LineageOS/android$" value="LineageOS/android" replace="platform/manifest" />
+      <pattern name="^LineageOS/android$" replace="platform/manifest" />
       <pattern name="LineageOS/android_external_ahbottomnavigation" replace="platform/vendor/cm/external/ahbottomnavigation" />
       <pattern name="LineageOS/android_external_android-visualizer" replace="platform/vendor/cm/packages/apps/AndroidVisualizer" />
       <pattern name="LineageOS/android_external_ant-wireless_ant_native" replace="platform/external/ant-wireless/ant_native" />
@@ -97,7 +97,7 @@
       <pattern name="LineageOS/external_android_support-prebuilt" replace="platform/vendor/cm/prebuilts/android-support" />
       <pattern name="LineageOS/ion" replace="platform/vendor/cm/external/ion" />
       <pattern name="LineageOS/AndroidAsync" replace="platform/vendor/cm/packages/apps/AndroidSync" />
-      <pattern name="^LineageOS/.*$" value="~_~/~,~LineageOS/android/device/~device/~,~LineageOS/android/~platform/~,~LineageOS/cm/~platform/vendor/" />
+      <pattern name="^LineageOS/.*$" />
     </replace-patterns>
   </project>
 </projects>
