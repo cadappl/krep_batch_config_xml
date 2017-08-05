@@ -1,16 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?> <projects>   <global_option name="keep_name" />   <global_option
-name="all" />
+<?xml version="1.0" encoding="utf-8"?>
+<projects>
+  <global_option name="keep_name" />
+  <global_option name="all" />
 
   <!-- For CM project, the git name need convert to the aosp one for the simple maintenance -->
   <project name="cm" group="android">
-    <option name="manifest" />
-    <option name="schema" />
-    <option name="working-dir" />
-    <option name="refs" />
-    <option name="repo_create" />
+    <option name="manifest" value="https://github.com/CyanogenMod/android.git" />
+    <option name="manifest-branch" value="cm-13.0" />
+    <option name="schema" value="repo-mirror" />
+    <option name="relative-dir" value="cm-13.0" />
+    <option name="refs" value="cm" />
+    <option name="repo_create" value="false" />
+    <!-- don't add "refs" for git-repo and tools/repo -->
     <exclude-patterns category="project">
-      <pattern />
-      <pattern />
+      <pattern value="git-repo" />
+      <pattern value="tools/repo" />
     </exclude-patterns>
     <replace-patterns category="project-rp">
       <pattern name="^CyanogenMod/android$" replace="platform/manifest" />
@@ -26,7 +30,6 @@ name="all" />
       <pattern name="CyanogenMod/android_external_exfat" replace="platform/external/exfat" />
       <pattern name="CyanogenMod/android_external_ffmpeg" replace="platform/external/ffmpeg" />
       <pattern name="CyanogenMod/android_external_fsck_msdos" replace="platform/external/fsck_msdos" />
-      <pattern name="CyanogenMod/android_external_fuse" replace="platform/external/fuse" />
       <pattern name="CyanogenMod/android_external_fuse" replace="platform/external/fuse" />
       <pattern name="CyanogenMod/android_external_gello_build" replace="platform/vendor/cm/external/gello/build" />
       <pattern name="CyanogenMod/android_external_google" replace="platform/vendor/cm/external/google" />
@@ -91,7 +94,7 @@ name="all" />
       <pattern name="CyanogenMod/external_android_support-prebuilt" replace="platform/vendor/cm/prebuilts/android-support" />
       <pattern name="CyanogenMod/ion" replace="platform/external/ion" />
       <pattern name="CyanogenMod/AndroidAsync" replace="platform/packages/apps/AndroidSync" />
-      <pattern name="^CyanogenMod/.*$" />
+      <pattern name="^CyanogenMod/.*$" value="~_~/~,~CyanogenMod/android/device/~device/~,~CyanogenMod/android/~platform/~,~CyanogenMod/cm/~platform/vendor/" />
     </replace-patterns>
   </project>
 </projects>
