@@ -8,6 +8,8 @@
     <option name="schema" value="repo-mirror" />
     <option name="relative-dir" value="aosp-mirror" />
     <option name="refs" value="aosp" />
+    <option name="repo-options" value="--no-clone-bundle" />
+    <option name="repo-options" value="sync:--force-broken" />
     <replace-patterns category="revision-rp">
       <pattern name="tools/repo$" value="~aosp/~~" />
     </replace-patterns>
