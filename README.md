@@ -1,11 +1,11 @@
 Configuration Demo for `krep batch`
 ===================================
 
-The file `project.xml` is the demonstrated configuration file for [krep]
+The file `all.xml` is the demonstrated configuration file for [krep]
 sub-command `batch`. The file can be used as the arguement for the command:
 
 ```sh
-$ krep batch *.xml
+$ krep batch -f all.xml
 ```
 
 Now the files contains four projects:
@@ -18,8 +18,9 @@ Now the files contains four projects:
 The main reference can be the usage of the project *Android CM* and
 *Android LineageOS*, which contain lots of patterns.
 
-And now with the extra support with `include' element, one XML file can include
-other files.
+And with the extra support with `include' element, one XML file can include
+other files. `hook` is also demonstrated to filter out uninterested
+repositories.
 
 [krep]: https://github.com/cadappl/krep
 
