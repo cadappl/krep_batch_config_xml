@@ -4,7 +4,7 @@
   <global_option name="all" />
 
   <!-- For CM project, the git name need convert to the aosp one for the simple maintenance -->
-  <project name="cm" group="android">
+  <project name="cm" group="notdefault,android">
     <option name="manifest" value="https://github.com/CyanogenMod/android.git" />
     <option name="manifest-branch" value="cm-13.0" />
     <option name="schema" value="repo-mirror" />
