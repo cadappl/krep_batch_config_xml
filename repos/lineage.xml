@@ -8,8 +8,9 @@
     <option name="schema" value="repo-mirror" />
     <option name="relative-dir" value="lineage" />
     <option name="refs" value="los" />
-    <option name="repo_create" value="false" />
-    <!-- don't add "refs" for git-repo and tools/repo -->
+    <option name="repo-create" value="false" />
+
+
     <exclude-patterns category="project">
       <pattern value="git-repo" />
       <pattern value="tools/repo" />
