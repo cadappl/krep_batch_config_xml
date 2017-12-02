@@ -18,9 +18,9 @@ Now the files contains four projects:
 The main reference can be the usage of the project *Android CM* and
 *Android LineageOS*, which contain lots of patterns.
 
-And with the extra support with `include' element, one XML file can include
-other files. `hook` is also demonstrated to filter out uninterested
-repositories.
+And with the extra support with `include` element, one XML file can include
+other files. An extra `hook` is also demonstrated to filter out uninterested
+git-repo repositories from the mirror projects, which are owned by a site.
 
 [krep]: https://github.com/cadappl/krep
 
