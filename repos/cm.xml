@@ -21,14 +21,14 @@
     <replace-patterns category="project">
       <pattern name="^CyanogenMod/android$" replace="platform/manifest" />
       <pattern name="CyanogenMod/AndroidAsync" replace="platform/external/koush/AndroidAsync" />
-      <pattern name="CyanogenMod/android_external_ant-wireless_ant_native" replace="platform/external/ant-wireless/ant_native" />
-      <pattern name="CyanogenMod/android_external_ant-wireless_ant_service" replace="platform/external/ant-wireless/ant_service" />
+      <pattern name="CyanogenMod/android_external_ant-wireless_ant_" replace="platform/external/ant-wireless/ant_" />
+      <pattern name="CyanogenMod/android_external_chromium_or.+" value="~_~/~,~/chromium/org~/chromium_org~,~/third/party/~/third_party/~,~LineageOS/android/~platform/~,~/libjpeg/turbo~/libjpeg_turbo~,~/openmax/dl~/openmax_dl~" />
       <pattern name="CyanogenMod/android_external_bash" replace="platform/external/bash" />
       <pattern name="CyanogenMod/android_external_cyanogen_UICommon" replace="platform/external/uicommon" />
       <pattern name="CyanogenMod/android_external_fsck_msdos" replace="platform/external/fsck_msdos" />
       <pattern name="CyanogenMod/android_external_gello_build" replace="platform/external/gello-build" />
       <pattern name="CyanogenMod/android_external_libnetfilter_conntrack" replace="platform/external/libnetfilter_conntrack" />
-      <pattern name="CyanogenMod/android_external_wpa_supplicant_8" replace="platform/external/wpa_supplicant_8" />
+      <pattern name="CyanogenMod/android_external_wpa_supplicant" replace="platform/external/wpa_supplicant" />
       <pattern name="CyanogenMod/android_hardware_libhardware_legacy" replace="platform/hardware/libhardware_legacy" />
       <pattern name="CyanogenMod/cm_platform_sdk" replace="platform/vendor/cmsdk" />
       <pattern name="CyanogenMod/external_android_support-prebuilt" replace="platform/external/android/support-prebuilt" />
