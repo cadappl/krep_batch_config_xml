@@ -15,7 +15,8 @@
     <hook name="pre-init" file="../hooks/repo-filter.sh">
       <args value="--working-dir=${working-dir}/${relative-dir}" />
       <args value="--filter=LineageOS/android_kernel_((?!cyanogen_msm8974))" />
-      <args value="--filter=LineageOS/device_htc_,[-/]kernel-" />
+      <args value="--filter=LineageOS/android_device_((?!(common|qcom)))" />
+      <args value="--filter=LineageOS/device_htc_,vendor_htc,[-/]kernel-" />
       <args value="--filter=LineageOS/huawei,LineageOS/AR6kSDK.3.1,LineageOS/android_packages_apps_Mms-caf" />
     </hook>
 
