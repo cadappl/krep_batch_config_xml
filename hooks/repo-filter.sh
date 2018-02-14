@@ -1,4 +1,4 @@
-#!/bin/bash +x
+#!/bin/bash
 
 function count_projects {
   grep '<project ' $1 | wc | awk ' { print $1 }'
