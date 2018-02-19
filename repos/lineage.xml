@@ -12,7 +12,7 @@
     <option name="relative-dir" value="lineage" />
     <option name="refs" value="los" />
     <option name="repo-create" value="false" />
-    <hook name="pre-init" file="../hooks/repo-filter.sh">
+    <hook name="pre-sync" file="../hooks/repo-filter.sh">
       <args value="--working-dir=${working-dir}/${relative-dir}" />
       <args value="--filter=LineageOS/android_kernel_((?!cyanogen_msm8974))" />
       <args value="--filter=LineageOS/android_device_((?!(common|qcom)))" />
