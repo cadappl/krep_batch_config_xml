@@ -12,7 +12,7 @@ Now the files contains four projects:
 
 - Linux kernel
 - Android AOSP
-- Android CM
+- ~~Android CM~~
 - Android LineageOS
 
 The main reference can be the usage of the project *Android CM* and
