@@ -13,7 +13,7 @@
     <option name="relative-dir" value="cm-13.0" />
     <option name="refs" value="cm" />
     <!-- don't create repository automatically -->
-    <option name="repo_create" value="false" />
+    <option name="repo-create" value="false" />
     <!-- don't import tools/repo -->
     <exclude-patterns category="project">
       <pattern value="tools/repo" />
