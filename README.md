@@ -30,6 +30,7 @@ Each project represents one or more features supported by [krep]:
   - As a git mirror project
 - Andorid AOSP
   - As repo and git mirror projects
+  - no `refs` for one project
   - `replace-patterns` for `revision`
 - ~~Android CM~~
   - As a repo-mirror project
