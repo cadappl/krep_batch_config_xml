@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <projects>
-  <global_option name="keep_name" />
-  <global_option name="all" />
+  <global-option name="keep-name" />
+  <global-option name="all" />
 
   <!-- For CM project, the git name will be converted to the aosp one for  -->
   <!-- the simple maintenance. the option 'output-xml-file' of sub-command -->

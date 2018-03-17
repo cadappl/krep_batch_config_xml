@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <projects>
-  <global_option name="keep_name" value="true" />
-  <global_option name="all" value="true" />
+  <global-option name="keep-name" />
+  <global-option name="all" />
 
   <project name="kernel/linux" group="gpl,kernel">
     <option name="git" value="git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git" />
