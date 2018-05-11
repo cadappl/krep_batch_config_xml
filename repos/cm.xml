@@ -34,6 +34,7 @@
       <pattern name="CyanogenMod/external_android_support-prebuilt" replace="platform/external/android/support-prebuilt" />
       <pattern name="CyanogenMod/ion" replace="platform/external/koush/ion" />
       <pattern name="CyanogenMod/.+" value="~_~/~,~CyanogenMod/android/device/~device/~,~CyanogenMod/android/~platform/~,~CyanogenMod/cm/~platform/vendor/~" />
+      <pattern name="CyanogenMod/android_vendor_qcom_opensource_" value="~LineageOS/android_~platform/~,~_~/~,~/qcom/opensource/~/qcom-opensource/~" />
     </replace-patterns>
   </project>
 </projects>
