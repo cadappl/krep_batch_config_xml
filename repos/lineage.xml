@@ -78,6 +78,10 @@
       <pattern name="LineageOS/external_cyanogen_cmhomeapi" replace="platform/vendor/cyganogen/external/cmhomeapi" />
       <pattern name="LineageOS/ion" replace="platform/external/koush/ion" />
       <pattern name="LineageOS/mirror" replace="mirror/manifest" />
+      <pattern name="LineageOS/android_vendor_qcom_opensource_" value="~LineageOS/android_~platform/~,~_~/~,~/qcom/opensource/~/qcom-opensource/~" />
+      <pattern name="LineageOS/android_vendor_nxp-nfc_opensource_frameworks" replace="platform/vendor/nxp/opensource/frameworks" />
+      <pattern name="LineageOS/android_vendor_nxp-nfc_opensource_libnfc-nci" replace="platform/vendor/nxp/opensource/external/libnfc-nci" />
+      <pattern name="LineageOS/android_vendor_nxp-nfc_opensource_Nfc" replace="platform/vendor/nxp/opensource/packages/apps/Nfc" />
       <pattern name="LineageOS/.+" value="~_~/~,~LineageOS/android/device/~device/~,~LineageOS/android/~platform/~,~LineageOS/cm/~platform/vendor/~" />
     </replace-patterns>
   </project>
