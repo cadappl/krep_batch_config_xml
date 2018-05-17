@@ -11,7 +11,9 @@
     <option name="schema" value="repo-mirror" />
     <option name="relative-dir" value="lineage" />
     <option name="refs" value="los" />
-    <option name="repo-create" value="false" />
+    <option name="extra-option" value="repo-init:no-clone-bundle=true" />
+    <option name="extra-option" value="repo-sync:no-clone-bundle=true" />
+
     <hook name="pre-sync" file="../hooks/repo-filter.sh">
       <args value="--working-dir=${working-dir}/${relative-dir}" />
       <args value="--filter=LineageOS/android_kernel_((?!cyanogen_msm8974))" />
