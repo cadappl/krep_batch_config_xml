@@ -8,8 +8,6 @@
     <option name="schema" value="repo-mirror" />
     <option name="relative-dir" value="aosp-mirror" />
     <option name="refs" value="aosp" />
-    <option name="repo-options" value="--no-clone-bundle" />
-    <option name="repo-options" value="sync:--force-broken" />
     <replace-patterns category="revision">
       <pattern name="tools/repo$" value="~aosp/~~" />
     </replace-patterns>
@@ -18,5 +16,6 @@
     <option name="git" value="https://gerrit.googlesource.com/git-repo" />
     <option name="schema" value="git-p" />
     <option name="relative-dir" value="git-repo" />
+    <option name="extra-option" value="gerrit-cp:empty-commit=false" />
   </project>
 </projects>
