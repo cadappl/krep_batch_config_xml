@@ -22,7 +22,7 @@
       <pattern name="^CyanogenMod/android$" replace="platform/manifest" />
       <pattern name="CyanogenMod/AndroidAsync" replace="platform/external/koush/AndroidAsync" />
       <pattern name="CyanogenMod/android_external_ant-wireless_ant_" replace="platform/external/ant-wireless/ant_" />
-      <pattern name="CyanogenMod/android_external_chromium_or.+" value="~_~/~,~/chromium/org~/chromium_org~,~/third/party/~/third_party/~,~CyanogenMod/android/~platform/~,~/libjpeg/turbo~/libjpeg_turbo~,~/openmax/dl~/openmax_dl~" />
+      <pattern name="CyanogenMod/android_external_chromium_or.+" value="=_=/=,=/chromium/org=/chromium_org=,=/third/party/=/third_party/=,=CyanogenMod/android/=platform/=,=/libjpeg/turbo=/libjpeg_turbo=,=/openmax/dl=/openmax_dl=" />
       <pattern name="CyanogenMod/android_external_bash" replace="platform/external/bash" />
       <pattern name="CyanogenMod/android_external_cyanogen_UICommon" replace="platform/external/uicommon" />
       <pattern name="CyanogenMod/android_external_fsck_msdos" replace="platform/external/fsck_msdos" />
@@ -33,8 +33,8 @@
       <pattern name="CyanogenMod/cm_platform_sdk" replace="platform/vendor/cmsdk" />
       <pattern name="CyanogenMod/external_android_support-prebuilt" replace="platform/external/android/support-prebuilt" />
       <pattern name="CyanogenMod/ion" replace="platform/external/koush/ion" />
-      <pattern name="CyanogenMod/.+" value="~_~/~,~CyanogenMod/android/device/~device/~,~CyanogenMod/android/~platform/~,~CyanogenMod/cm/~platform/vendor/~" />
-      <pattern name="CyanogenMod/android_vendor_qcom_opensource_" value="~CyanogenMod/android_~platform/~,~_~/~,~/qcom/opensource/~/qcom-opensource/~" />
+      <pattern name="CyanogenMod/android_vendor_qcom_opensource_" value="=CyanogenMod/android_=platform/=,=_=/=,=/qcom/opensource/=/qcom-opensource/=" />
+      <pattern name="CyanogenMod/.+" value="=_=/=,=CyanogenMod/android/device/=device/=,=CyanogenMod/android/=platform/=,=CyanogenMod/cm/=platform/vendor/=" />
     </replace-patterns>
   </project>
 </projects>
