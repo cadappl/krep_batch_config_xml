@@ -73,15 +73,17 @@
       <pattern name="LineageOS/android_external_xmp_toolkit" replace="platform/external/xmp_toolkit" />
       <pattern name="LineageOS/android_hardware_libhardware_legacy" replace="platform/hardware/libhardware_legacy" />
       <pattern name="LineageOS/android_packages_overlays_Lineage" replace="platform/vendor/lineage/overlay" />
+      <pattern name="LineageOS/android_platform_testing" replace="platform/platform_testing" />
       <pattern name="LineageOS/android_prebuilts_gcc_darwin-x86_x86_x86_64-linux-android-4.9" replace="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" />
       <pattern name="LineageOS/android_prebuilts_gcc_linux-x86_x86_x86_64-linux-android-4.9" replace="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" />
+      <pattern name="LineageOS/android_system_update_engine" replace="platform/system/update_engine" />
       <pattern name="LineageOS/cm_platform_sdk" replace="platform/vendor/cmsdk" />
       <pattern name="LineageOS/external_android_support-prebuilt" replace="platform/external/android/support-prebuilt" />
       <pattern name="LineageOS/external_cyanogen_cmhomeapi" replace="platform/vendor/cyganogen/external/cmhomeapi" />
       <pattern name="LineageOS/ion" replace="platform/external/koush/ion" />
       <pattern name="LineageOS/mirror" replace="mirror/manifest" />
-      <pattern name="LineageOS/android_vendor_qcom_opensource_" value="=LineageOS/android_=platform/=,=_=/=,=/qcom/opensource/=/qcom-opensource/=" />
-      <pattern name="LineageOS/android_vendor_nxp-nfc_opensource_frameworks" replace="platform/vendor/nxp/opensource/frameworks" />
+      <pattern name="LineageOS/android_vendor_qcom_opensource_" value="=LineageOS/android_=platform/=,=_=/=,=/qcom/opensource/=/qcom-opensource/=,~cryptfs/hw~cryptfs_hw~" />
+      <pattern name="LineageOS/android_vendor_nxp-nfc_opensource_frameworks" replace="platform/vendor/nxp/opensource/frameworks" continue="true" />
       <pattern name="LineageOS/android_vendor_nxp-nfc_opensource_libnfc-nci" replace="platform/vendor/nxp/opensource/external/libnfc-nci" />
       <pattern name="LineageOS/android_vendor_nxp-nfc_opensource_Nfc" replace="platform/vendor/nxp/opensource/packages/apps/Nfc" />
       <pattern name="LineageOS/.+" value="=_=/=,=LineageOS/android/device/=device/=,=LineageOS/android/=platform/=,=LineageOS/cm/=platform/vendor/="/>
