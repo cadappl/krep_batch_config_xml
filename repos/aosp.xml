@@ -7,7 +7,7 @@
     <option name="manifest" value="git://android.googlesource.com/platform/manifest" />
     <option name="schema" value="repo-mirror" />
     <option name="relative-dir" value="aosp-mirror" />
-    <option name="refs" value="aosp" />
+    <option name="head-refs" value="aosp" />
     <option name="repo-create" value="true" />
     <replace-patterns category="revision">
       <pattern name="tools/repo$" value="~aosp/~~" />
