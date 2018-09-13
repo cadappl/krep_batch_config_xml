@@ -60,7 +60,7 @@
       <pattern name="LineageOS/AndroidAsync" replace="platform/external/koush/AndroidAsync" />
       <pattern name="LineageOS/android_device_qcom_msm8916_64" replace="device/qcom/msm8916_64" />
       <pattern name="LineageOS/android_external_ant-wireless_ant_" replace="platform/external/ant-wireless/ant_" />
-      <pattern name="LineageOS/android_external_chromium_or.+" value="=_=/=,=/chromium/org=/chromium_org=,=/third/party/=/third_party/=,=LineageOS/android/=platform/=,=/libjpeg/turbo=/libjpeg_turbo=,=/openmax/dl=/openmax_dl=" />
+      <pattern name="LineageOS/android_external_chromium_or.+" value="=_=/=,=/chromium/org=/chromium_org=,=/third/party/=/third_party/=,=LineageOS/android/=platform/=,~/libjpeg/turbo~/libjpeg_turbo~,~/openmax/dl~/openmax_dl~" />
       <pattern name="LineageOS/android_external_cyanogen_UICommon" replace="platform/external/uicommon" />
       <pattern name="LineageOS/android_external_fsck_msdos" replace="platform/external/fsck_msdos" />
       <pattern name="LineageOS/android_external_gello_build" replace="platform/external/gello-build" />
