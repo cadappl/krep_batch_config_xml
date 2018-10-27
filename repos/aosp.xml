@@ -9,6 +9,7 @@
     <option name="relative-dir" value="aosp-mirror" />
     <option name="head-refs" value="aosp" />
     <option name="repo-create" value="true" />
+    <option name="extra-option" value="gerrit-cp:empty-commit=false" />
     <replace-patterns category="revision">
       <pattern name="tools/repo$" value="~aosp/~~" />
     </replace-patterns>
