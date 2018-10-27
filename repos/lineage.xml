@@ -13,6 +13,7 @@
     <option name="refs" value="los" />
     <option name="extra-option" value="repo-init:no-clone-bundle=true" />
     <option name="extra-option" value="repo-sync:no-clone-bundle=true" />
+    <option name="extra-option" value="gerrit-cp:empty-commit=false" />
 
     <hook name="pre-sync" file="../hooks/repo-filter.sh">
       <args value="--working-dir=${working-dir}/${relative-dir}" />
