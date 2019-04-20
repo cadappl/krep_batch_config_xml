@@ -10,6 +10,10 @@
     <option name="head-refs" value="aosp" />
     <option name="repo-create" value="true" />
     <option name="extra-option" value="gerrit-cp:empty-commit=false" />
+    <exclude-patterns category="revision">
+      <pattern name="studio-master-dev$"/>
+      <pattern name="^experimental/"/>
+    </exclude-patterns>
     <replace-patterns category="revision">
       <pattern name="tools/repo$" value="~aosp/~~" />
     </replace-patterns>
