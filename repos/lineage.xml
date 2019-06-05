@@ -11,8 +11,8 @@
     <option name="schema" value="repo-mirror" />
     <option name="relative-dir" value="lineage" />
     <option name="refs" value="los" />
-    <option name="extra-option" value="repo-init:no-clone-bundle=true" />
-    <option name="extra-option" value="repo-sync:no-clone-bundle=true" />
+    <option name="extra-option" value="repo-init:no-clone-bundle" />
+    <option name="extra-option" value="repo-sync:no-clone-bundle" />
     <option name="extra-option" value="gerrit-cp:empty-commit=false" />
 
     <hook name="pre-sync" file="../hooks/repo-filter.sh">
