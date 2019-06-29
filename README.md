@@ -21,8 +21,8 @@ The file `all.xml` can be used with the command:
 $ krep batch -f all.xml
 ```
 
-Generally, other files for the projects can also be executed as the parameters
-of `krep batch` either.
+Generally, other files for the projects can also be executed directly as the
+parameters of `krep batch` either with or without `-f`.
 
 Each project represents one or more features supported by [krep]:
 
@@ -44,5 +44,5 @@ Each project represents one or more features supported by [krep]:
 `all.xml` shows to `include` other XML files, which can share the same
 `global-option` and make the maintenance of the file simpler.
 
-[krep]: https://github.com/cadappl/krep
+[krep]: https://github.com/krep2/krep
 
