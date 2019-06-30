@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <projects>
-  <global-option name="keep-name" value="true" />
-  <global-option name="all" value="true" />
+  <global-option name="keep-name" />
+  <global-option name="all" />
+  <global-option name="force" />
 
   <project name="aosp" group="android">
     <option name="manifest" value="git://android.googlesource.com/platform/manifest" />
