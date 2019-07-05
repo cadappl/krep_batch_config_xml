@@ -9,7 +9,7 @@
   <project name="los" group="android">
     <option name="manifest" value="https://github.com/LineageOS/mirror.git" />
     <option name="schema" value="repo-mirror" />
-    <option name="relative-dir" value="lineage" />
+    <option name="relative-dir" value="lineage" if="$(krep.included.depth) > 0"/>
     <option name="refs" value="los" />
     <option name="extra-option" value="repo-init:no-clone-bundle" />
     <option name="extra-option" value="repo-sync:no-clone-bundle" />

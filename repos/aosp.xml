@@ -7,7 +7,7 @@
   <project name="aosp" group="android">
     <option name="manifest" value="git://android.googlesource.com/platform/manifest" />
     <option name="schema" value="repo-mirror" />
-    <option name="relative-dir" value="aosp-mirror" />
+    <option name="relative-dir" value="aosp-mirror" if="$(krep.included.depth) > 0"/>
     <option name="head-refs" value="aosp" />
     <option name="repo-create" value="true" />
     <option name="extra-option" value="gerrit-cp:empty-commit=false" />

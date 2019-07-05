@@ -6,7 +6,7 @@
   <project name="kernel/linux" group="gpl,kernel">
     <option name="git" value="git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git" />
     <option name="schema" value="git-b" />
-    <option name="relative-dir" value="linux-stable.git" />
+    <option name="relative-dir" value="linux-stable.git" if="$(krep.included.depth) > 0"/>
     <option name="refs" value="official" />
   </project>
 </projects>

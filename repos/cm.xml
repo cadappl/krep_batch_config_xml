@@ -10,7 +10,7 @@
     <option name="manifest" value="https://github.com/CyanogenMod/android.git" />
     <option name="manifest-branch" value="cm-13.0" />
     <option name="schema" value="repo-mirror" />
-    <option name="relative-dir" value="cm-13.0" />
+    <option name="relative-dir" value="cm-13.0" if="$(krep.included.depth) > 0"/>
     <option name="refs" value="cm" />
     <!-- don't create repository automatically -->
     <option name="repo-create" value="false" />
