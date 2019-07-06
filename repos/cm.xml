@@ -31,7 +31,8 @@
       <pattern name="CyanogenMod/android_external_wpa_supplicant" replace="platform/external/wpa_supplicant" />
       <pattern name="CyanogenMod/android_hardware_libhardware_legacy" replace="platform/hardware/libhardware_legacy" />
       <pattern name="CyanogenMod/cm_platform_sdk" replace="platform/vendor/cmsdk" />
-      <pattern name="CyanogenMod/external_android_support-prebuilt" replace="platform/external/android/support-prebuilt" />
+      <pattern name="CyanogenMod/android_prebuilts_cmsdk" replace="platform/vendor/cmsdk/prebuilts"/>
+      <pattern name="CyanogenMod/external_android_support-prebuilt" replace="platform/vendor/cyganogen/prebuilts/android_support"/>
       <pattern name="CyanogenMod/ion" replace="platform/external/koush/ion" />
       <pattern name="CyanogenMod/android_vendor_qcom_opensource_" value="=CyanogenMod/android_=platform/=,=_=/=,=/qcom/opensource/=/qcom-opensource/=" />
       <pattern name="CyanogenMod/.+" value="=_=/=,=CyanogenMod/android/device/=device/=,=CyanogenMod/android/=platform/=,=CyanogenMod/cm/=platform/vendor/=" />
