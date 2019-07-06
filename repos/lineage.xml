@@ -58,7 +58,7 @@
     </exclude-patterns>
     <replace-patterns category="project">
       <pattern name="^LineageOS/android$" replace="platform/manifest" />
-      <pattern name="LineageOS/AndroidAsync" replace="platform/external/koush/AndroidAsync" />
+      <pattern name="LineageOS/AndroidAsync" replace="platform/vendor/koush/packages/apps/AndroidAsync" />
       <pattern name="LineageOS/android_device_qcom_msm8916_64" replace="device/qcom/msm8916_64" />
       <pattern name="LineageOS/android_external_ant-wireless_ant_" replace="platform/external/ant-wireless/ant_" />
       <pattern name="LineageOS/android_external_chromium_or.+" value="=_=/=,=/chromium/org=/chromium_org=,=/third/party/=/third_party/=,=LineageOS/android/=platform/=,~/libjpeg/turbo~/libjpeg_turbo~,~/openmax/dl~/openmax_dl~" />
@@ -81,7 +81,7 @@
       <pattern name="LineageOS/cm_platform_sdk" replace="platform/vendor/cmsdk" />
       <pattern name="LineageOS/external_android_support-prebuilt" replace="platform/external/android/support-prebuilt" />
       <pattern name="LineageOS/external_cyanogen_cmhomeapi" replace="platform/vendor/cyganogen/external/cmhomeapi" />
-      <pattern name="LineageOS/ion" replace="platform/external/koush/ion" />
+      <pattern name="LineageOS/ion" replace="platform/vendor/koush/external/ion" />
       <pattern name="LineageOS/mirror" replace="mirror/manifest" />
       <pattern name="LineageOS/android_vendor_qcom_opensource_" value="=LineageOS/android_=platform/=,=_=/=,=/qcom/opensource/=/qcom-opensource/=,~cryptfs/hw~cryptfs_hw~" />
       <pattern name="LineageOS/android_vendor_nxp-nfc_opensource_frameworks" replace="platform/vendor/nxp/opensource/frameworks" continue="true" />
