@@ -11,6 +11,7 @@
     <option name="head-refs" value="aosp" />
     <option name="repo-create" value="true" />
     <option name="extra-option" value="gerrit-cp:empty-commit=false" />
+    <option name="extra-option" value="git-push:no-thin" />
     <exclude-patterns category="revision">
       <pattern name="studio-master-dev$"/>
       <pattern name="^experimental/"/>
