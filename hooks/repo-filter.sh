@@ -22,7 +22,7 @@ function filter_repo {
 working_dir=
 filters=""
 default_xml=
-static_xml=
+filtered_xml=
 
 while (($#)) ; do
   case $1 in
@@ -47,21 +47,21 @@ while (($#)) ; do
 done
 
 default_xml=${working_dir}.repo/manifests/default.xml
-static_xml=${working_dir}.repo/manifests/static.xml
+filtered_xml=${working_dir}.repo/manifests/default-filtered.xml
 
 #======================
 static=false
-if [ -e $static_xml ] ; then
+if [ -e $filtered_xml ] ; then
   static=true
 fi
 
 if [ -e $default_xml ] ; then
   if [ -n "$filters" ] ; then
-    filter_repo $default_xml $static_xml ${filters//,/ }
+    filter_repo $default_xml $filtered_xml ${filters//,/ }
   fi
 
   if ! $static ; then
-    repo init -m ${static_xml##*/}
+    repo init -m ${filtered_xml##*/}
   fi
 fi
 
