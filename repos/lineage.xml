@@ -73,7 +73,8 @@
       <pattern name="LineageOS/android_external_wpa_supplicant" replace="platform/external/wpa_supplicant" />
       <pattern name="LineageOS/android_external_xmp_toolkit" replace="platform/external/xmp_toolkit" />
       <pattern name="LineageOS/android_hardware_libhardware_legacy" replace="platform/hardware/libhardware_legacy" />
-      <pattern name="LineageOS/android_packages_overlays_Lineage" replace="platform/vendor/lineage/overlay" />
+      <pattern name="LineageOS/android_packages_overlays_Lineage" replace="platform/vendor/lineage/packages/overlays" />
+      <pattern name="LineageOS/android_packages_resources_devicesettings" replace="platform/vendor/lineage/packages/resources/devicesettings" />
       <pattern name="LineageOS/android_prebuilts_cmsdk" replace="platform/vendor/cmsdk/prebuilts"/>
       <pattern name="LineageOS/android_platform_testing" replace="platform/platform_testing" />
       <pattern name="LineageOS/android_prebuilts_gcc_darwin-x86_x86_x86_64-linux-android-4.9" replace="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" />
