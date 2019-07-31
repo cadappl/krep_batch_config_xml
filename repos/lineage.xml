@@ -18,7 +18,7 @@
     <hook name="pre-sync" file="../hooks/repo-filter.sh">
       <args value="--working-dir=${working-dir}/${relative-dir}" />
       <args value="--filter=LineageOS/android_kernel_((?!cyanogen_msm8974))" />
-      <args value="--filter=LineageOS/android_device_((?!(common|generic|qcom|lineage)))" />
+      <args value="--filter=LineageOS/android_device_((?!(common|generic|qcom|lineage|generic_goldfish|google_atv)))" />
       <args value="--filter=LineageOS/device_htc_,vendor_htc,[-/]kernel-" />
       <args value="--filter=LineageOS/huawei,LineageOS/AR6kSDK.3.1,\-caf" />
       <args value="--filter=LineageOS/CMAccountWebsite,LineageOS/CMBalance,LineageOS/CMStatsServer,LineageOS/Superuser" />
@@ -75,13 +75,13 @@
       <pattern name="LineageOS/android_hardware_libhardware_legacy" replace="platform/hardware/libhardware_legacy" />
       <pattern name="LineageOS/android_packages_overlays_Lineage" replace="platform/vendor/lineage/packages/overlays" />
       <pattern name="LineageOS/android_packages_resources_devicesettings" replace="platform/vendor/lineage/packages/resources/devicesettings" />
-      <pattern name="LineageOS/android_prebuilts_cmsdk" replace="platform/vendor/cmsdk/prebuilts"/>
       <pattern name="LineageOS/android_platform_testing" replace="platform/platform_testing" />
+      <pattern name="LineageOS/android_prebuilts_cmsdk" replace="platform/vendor/cmsdk/prebuilts"/>
       <pattern name="LineageOS/android_prebuilts_gcc_darwin-x86_x86_x86_64-linux-android-4.9" replace="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" />
       <pattern name="LineageOS/android_prebuilts_gcc_linux-x86_x86_x86_64-linux-android-4.9" replace="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" />
       <pattern name="LineageOS/android_system_update_engine" replace="platform/system/update_engine" />
       <pattern name="LineageOS/cm_platform_sdk" replace="platform/vendor/cmsdk" />
-      <pattern name="LineageOS/external_android_support-prebuilt" replace="platform/vendor/cyganogen/prebuilts/android_support"/>
+      <pattern name="LineageOS/external_android_support-prebuilt" replace="platform/vendor/cyganogen/prebuilts/support"/>
       <pattern name="LineageOS/external_cyanogen_cmhomeapi" replace="platform/vendor/cyganogen/external/cmhomeapi" />
       <pattern name="LineageOS/ion" replace="platform/vendor/koush/external/ion" />
       <pattern name="LineageOS/mirror" replace="mirror/manifest" />
@@ -89,7 +89,7 @@
       <pattern name="LineageOS/android_vendor_nxp-nfc_opensource_frameworks" replace="platform/vendor/nxp/opensource/frameworks" continue="true" />
       <pattern name="LineageOS/android_vendor_nxp-nfc_opensource_libnfc-nci" replace="platform/vendor/nxp/opensource/external/libnfc-nci" />
       <pattern name="LineageOS/android_vendor_nxp-nfc_opensource_Nfc" replace="platform/vendor/nxp/opensource/packages/apps/Nfc" />
-      <pattern name="LineageOS/.+" value="=_=/=,=LineageOS/android/device/=device/=,=LineageOS/android/=platform/=,=LineageOS/cm/=platform/vendor/="/>
+      <pattern name="LineageOS/.+" value="=_=/=,=LineageOS/android/device/=device/=,=LineageOS/android/kernel/=kernel/=,=LineageOS/android/=platform/=,=LineageOS/cm/=platform/vendor/="/>
     </replace-patterns>
   </project>
 </projects>
