@@ -7,4 +7,5 @@
   <include name="repos/cm.xml" />
   <include name="repos/lineage.xml" />
   <include name="repos/linux.xml" />
+  <include name="repos/themuppets.xml" />
 </projects>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<projects>
+  <global-option name="keep-name" />
+  <global-option name="all" />
+
+  <!-- For themuppets project, the git name will be converted to the aosp -->
+  <!-- one for the simple maintenance. the option 'output-xml-file' of    -->
+  <!-- sub-command 'repo' could be used to generate the new manifest xml  -->
+  <!-- file.                                                              -->
+  <project name="tm" group="android">
+    <option name="manifest" value="https://github.com/TheMuppets/mirror.git" />
+    <option name="schema" value="repo-mirror" />
+    <option name="relative-dir" value="themuppets" if="$(krep.included.depth) > 0"/>
+    <option name="refs" value="tm" />
+    <option name="extra-option" value="repo-init:no-clone-bundle" />
+    <option name="extra-option" value="repo-init:repo-branch=mirror" />
+    <option name="extra-option" value="repo-sync:no-clone-bundle" />
+    <option name="extra-option" value="gerrit-cp:empty-commit=false" />
+
+    <hook name="pre-sync" file="../hooks/repo-filter.sh">
+      <args value="--working-dir=${working-dir}/${relative-dir}" />
+      <args value="--filter=LineageOS/android_kernel_((?!(zuk|sony)))" />
+    </hook>
+
+    <replace-patterns category="project">
+      <pattern name="TheMuppets/.+" value="=_=/=,~TheMuppets/proprietary/vendor/(.*)~platform/vendor/\1/proprietary~"/>
+    </replace-patterns>
+  </project>
+</projects>
